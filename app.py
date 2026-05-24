@@ -78,7 +78,7 @@ if page == "Executive Overview":
     col5.metric("DNK Portal", "2.67")
 
     try:
-        df = load_sheet("Total Score")
+        df = load_sheet("Total_Score")
 
         st.subheader("Regional Score Analysis")
 
@@ -112,7 +112,7 @@ elif page == "Mail Growth":
     st.title("Page 2 — KPI 1: Mail Growth")
 
     try:
-        df = load_sheet("% growth in mail traffic")
+        df = load_sheet("Mail_Growth")
 
         st.subheader("Mail Growth Analytics")
 
@@ -165,7 +165,7 @@ elif page == "Parcel Growth":
     st.title("Page 3 — KPI 2: Parcel Growth")
 
     try:
-        df = load_sheet("% growth in Parcel traffic")
+        df = load_sheet("Parcel_Growth")
 
         st.dataframe(df, use_container_width=True)
 
@@ -205,11 +205,11 @@ elif page == "Digital COD":
 
         if mode == "Daily Analysis":
 
-            df = load_sheet("Digital COD Transactions  (Daily position)")
+            df = load_sheet("Digital_COD_Daily")
 
         else:
 
-            df = load_sheet("% Digital Transactions for CoD Parcels (for which payment through Digital Mode) (6)")
+            df = load_sheet("Digital_COD_Trend")
 
         st.dataframe(df, use_container_width=True)
 
@@ -240,7 +240,7 @@ elif page == "Foreign Destination":
     st.title("Page 5 — KPI 4: Foreign Destination")
 
     try:
-        df = load_sheet("Foreign Destination Shipments")
+        df = load_sheet("Foreign_Destination")
 
         st.dataframe(df, use_container_width=True)
 
@@ -271,7 +271,7 @@ elif page == "DNK Portal":
     st.title("Page 6 — KPI 5: DNK Portal")
 
     try:
-        df = load_sheet("DNK Portal Shipments")
+        df = load_sheet("DNK_Portal")
 
         st.dataframe(df, use_container_width=True)
 
