@@ -293,5 +293,3 @@ elif page == "DNK Portal":
 
     except Exception as e:
         st.error(f"Error loading DNK Portal data: {e}")
-* support KPI navigation
-* use your uploaded workbook dynamically
